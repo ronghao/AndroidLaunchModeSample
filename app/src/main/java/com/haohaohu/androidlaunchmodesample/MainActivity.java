@@ -40,6 +40,7 @@ public class MainActivity extends FragmentActivity {
                         startActivity(intent);
                     }
                 });
+
         findViewById(R.id.main_text_2)
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -48,6 +49,7 @@ public class MainActivity extends FragmentActivity {
                         startActivity(intent);
                     }
                 });
+
         findViewById(R.id.main_text_3)
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -65,6 +67,7 @@ public class MainActivity extends FragmentActivity {
                         startActivity(intent);
                     }
                 });
+
         findViewById(R.id.main_text_5)
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
