@@ -17,6 +17,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="20dp"
-        android:text="启动singleinstanceactivity2" />
+        android:text="启动singleinstanceactivity2\n intent.addFlags(FLAG_ACTIVITY_NEW_TASK | FLAG_ACTIVITY_MULTIPLE_TASK);" />
 
 </LinearLayout>

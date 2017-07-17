@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
+import android.widget.TextView;
 
 import com.haohaohu.androidlaunchmodesample.R;
 
@@ -26,6 +27,11 @@ public class SingleTask2Activity extends FragmentActivity {
                         startActivity(intent);
                     }
                 });
+
+        TextView textView = ((TextView) findViewById(R.id.activity_singletask2_text_2));
+        String str = textView.getText() + "   task：" + getTaskId();
+        textView.setText(str);
     }
+
 
 }

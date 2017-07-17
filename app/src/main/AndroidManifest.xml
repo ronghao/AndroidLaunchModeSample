@@ -36,18 +36,37 @@
             android:label="@string/title_activity_test1" />
         <activity
             android:name=".activity.SingleTask1Activity"
-            android:label="@string/title_activity_test1" />
+            android:label="@string/title_activity_test1"
+            android:taskAffinity="com.haohaohu.task1" />
         <activity
             android:name=".activity.SingleTask2Activity"
-            android:label="@string/title_activity_test1" />
+            android:label="@string/title_activity_test1"
+            android:taskAffinity="com.haohaohu.task2" />
         <activity
             android:name=".activity.SingleTask3Activity"
-            android:label="@string/title_activity_test1" />
+            android:label="@string/title_activity_test1"
+            android:taskAffinity="com.haohaohu.task3" />
+        <activity
+            android:name=".activity.SingleTask1WithTaskAffinityActivity"
+            android:label="@string/title_activity_test1"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.haohaohu.task1" />
+        <activity
+            android:name=".activity.SingleTask2WithTaskAffinityActivity"
+            android:label="@string/title_activity_test1"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.haohaohu.task2" />
+        <activity
+            android:name=".activity.SingleTask3WithTaskAffinityActivity"
+            android:label="@string/title_activity_test1"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.haohaohu.task3" />
         <activity
             android:name=".activity.SingleInstance1Activity"
             android:label="@string/title_activity_test1" />
         <activity
             android:name=".activity.SingleInstance2Activity"
+
             android:label="@string/title_activity_test1" />
     </application>
 
