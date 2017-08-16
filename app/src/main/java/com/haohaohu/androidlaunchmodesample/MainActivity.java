@@ -8,6 +8,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Toast;
 
+import com.haohaohu.androidlaunchmodesample.activity.Reg1Activity;
 import com.haohaohu.androidlaunchmodesample.activity.SingleInstance1Activity;
 import com.haohaohu.androidlaunchmodesample.activity.SingleTask1Activity;
 import com.haohaohu.androidlaunchmodesample.activity.SingleTask1WithTaskAffinityActivity;
@@ -73,6 +74,15 @@ public class MainActivity extends FragmentActivity {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(MainActivity.this, SingleTask1WithTaskAffinityActivity.class);
+                        startActivity(intent);
+                    }
+                });
+
+        findViewById(R.id.main_text_6)
+                .setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, Reg1Activity.class);
                         startActivity(intent);
                     }
                 });

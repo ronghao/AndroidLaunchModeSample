@@ -7,6 +7,9 @@ import android.view.View;
 
 import com.haohaohu.androidlaunchmodesample.R;
 
+import static android.content.Intent.FLAG_ACTIVITY_MULTIPLE_TASK;
+import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
+
 public class Standard1Activity extends FragmentActivity {
 
     @Override
@@ -22,6 +25,7 @@ public class Standard1Activity extends FragmentActivity {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(Standard1Activity.this, Standard2Activity.class);
+                        intent.addFlags(FLAG_ACTIVITY_NEW_TASK | FLAG_ACTIVITY_MULTIPLE_TASK);
                         startActivity(intent);
                     }
                 });

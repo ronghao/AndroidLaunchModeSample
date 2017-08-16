@@ -16,6 +16,11 @@ public class SingleTop3Activity extends FragmentActivity {
         initClick();
     }
 
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+    }
+
     private void initClick() {
         findViewById(R.id.activity_singletop3_text_1)
                 .setOnClickListener(new View.OnClickListener() {

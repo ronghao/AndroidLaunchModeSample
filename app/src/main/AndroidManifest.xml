@@ -67,6 +67,16 @@
         <activity
             android:name=".activity.SingleInstance2Activity"
             android:label="@string/title_activity_test1" />
+
+        <activity
+            android:name=".activity.Reg1Activity"
+            android:label="Reg1Activity" />
+        <activity
+            android:name=".activity.Reg2Activity"
+            android:label="Reg2Activity" />
+        <activity
+            android:name=".activity.Reg3Activity"
+            android:label="Reg3Activity" />
     </application>
 
 </manifest>
