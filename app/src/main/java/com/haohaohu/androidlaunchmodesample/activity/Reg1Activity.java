@@ -9,6 +9,9 @@ import android.widget.TextView;
 
 import com.haohaohu.androidlaunchmodesample.R;
 
+import static android.content.Intent.FLAG_ACTIVITY_MULTIPLE_TASK;
+import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
+
 /**
  * @author haohao on 2017/8/16 13:40
  * @version v1.0
@@ -28,8 +31,13 @@ public class Reg1Activity extends FragmentActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Reg1Activity.this, Reg2Activity.class);
+                intent.addFlags(FLAG_ACTIVITY_NEW_TASK | FLAG_ACTIVITY_MULTIPLE_TASK);
                 startActivity(intent);
             }
         });
+
+        TextView textView1 = ((TextView) findViewById(R.id.reg_show_text));
+        String str = "   task：" + getTaskId();
+        textView1.setText(str);
     }
 }

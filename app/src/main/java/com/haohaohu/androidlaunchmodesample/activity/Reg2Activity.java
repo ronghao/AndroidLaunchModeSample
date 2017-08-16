@@ -34,5 +34,9 @@ public class Reg2Activity extends FragmentActivity {
         });
 
         EditText editText = (EditText) findViewById(R.id.reg2_edit);
+
+        TextView textView1 = ((TextView) findViewById(R.id.reg2_show_text));
+        String str = "   task：" + getTaskId();
+        textView1.setText(str);
     }
 }

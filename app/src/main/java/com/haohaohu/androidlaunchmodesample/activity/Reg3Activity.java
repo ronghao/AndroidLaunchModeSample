@@ -3,6 +3,7 @@ package com.haohaohu.androidlaunchmodesample.activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
+import android.widget.TextView;
 
 import com.haohaohu.androidlaunchmodesample.R;
 
@@ -20,6 +21,8 @@ public class Reg3Activity extends FragmentActivity {
     }
 
     private void init() {
-
+        TextView textView1 = ((TextView) findViewById(R.id.reg3_show_text));
+        String str = "   task：" + getTaskId();
+        textView1.setText(str);
     }
 }
