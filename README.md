@@ -43,3 +43,11 @@
 	+ 单一实例
 	+ 点击顺序 1->2
 	+ 任务栈  [栈顶]1[栈底]->[栈顶]2[栈底][栈顶]1[栈底]
+
+
+# 清空回退栈
+|属性|描述|
+|-|-|
+|alwaysRetainTaskState|Task 也将在栈中保持所有的 Activity|
+|clearTaskOnLaunch|即使在离开很短的时间，也会将返回 Task 的初始状态|
+|finishOnTaskLaunch|这个属性类似 clearTaskOnLaunch，作用于单个 Activity|
