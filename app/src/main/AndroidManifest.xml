@@ -73,6 +73,7 @@
             android:label="Reg1Activity" />
         <activity
             android:name=".activity.Reg2Activity"
+            android:finishOnCloseSystemDialogs="true"
             android:label="Reg2Activity" />
         <activity
             android:name=".activity.Reg3Activity"
